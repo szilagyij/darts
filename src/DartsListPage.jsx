@@ -50,7 +50,8 @@ export const DartsListPage=()=> {
                                 <br />
                                 <NavLink key="x" to={"/mod-darts/" + darts.id}>
                                     <i className="bi bi-pencil"></i></NavLink> &nbsp;&nbsp;
-                                    <NavLink key="y" to={"/del-darts/" + darts.id}><i className="bi bi-trash3"></i></NavLink>
+                                    <NavLink key="y" to={"/del-darts/" + darts.id}><i className="bi bi-trash3"></i></NavLink>&nbsp;&nbsp;
+                                    <NavLink key={darts.id} to={"/darts/" + darts.id}><i class="bi bi-clipboard2-pulse"></i></NavLink>
                             </div>
                         </div>
 
