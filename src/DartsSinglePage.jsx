@@ -53,10 +53,11 @@ export const DartsSinglePage =()=> {
                                         src={darts.image_url ? darts.image_url :
                                             "https://via.placeholder.com/400x800"} /></NavLink>
                                 <br />
-                                  </div>
-                                  <div><NavLink to="/"><i className="bi bi-backspace"></i></NavLink> &nbsp;&nbsp;&nbsp;
-<NavLink key="y" to={"/mod-darts/" + darts.id}><i className="bi bi-pencil"></i></NavLink></div>   
+                                <NavLink to="/"><button className="btn btn-primary"><i class="bi bi-text-paragraph"/></button></NavLink>&nbsp;&nbsp;
+                                <NavLink key="x" to={"/mod-darts/" + darts.id}><button className='btn btn-warning'><i className="bi bi-pencil-square"/></button></NavLink> &nbsp;&nbsp;
+                                    <NavLink key="y" to={"/del-darts/" + darts.id}><button className='btn btn-danger'><i className="bi bi-trash3"/></button></NavLink>&nbsp;&nbsp;
                             </div>
+                        </div>
                         
                     )}
                 </div>
